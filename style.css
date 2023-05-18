@@ -1,13 +1,16 @@
+/* Reset default styles */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #1f1f1f;
     color: white;
     font-family: "Arial", sans-serif;
     line-height: 1.5;
 }
+
 header {
     background-color: #333;
     color: #fff;
@@ -62,6 +65,7 @@ li::before {
     width: 300px;
     margin-bottom: 10px;
 }
+
 .cell {
     width: 100px;
     height: 100px;
@@ -73,30 +77,37 @@ li::before {
     font-size: 40px;
     cursor: pointer;
 }
+
 .cell-text {
     transition: transform 0.3s ease;
 }
+
 .cell:hover .cell-text {
     transform: scale(1.7);
 }
+
 button {
     font-size: 20px;
 }
-.start{
+
+.start {
     position: absolute;
     top: 275px;
     left: 40%;
 }
-.prev{
+
+.prev {
     position: absolute;
     top: 275px;
     left: 45%;
 }
-.reset{
+
+.reset {
     position: absolute;
     top: 275px;
     left: 56%;
 }
+
 .scoreboard {
     display: flex;
     justify-content: space-between;
@@ -113,44 +124,45 @@ button {
 .player span {
     margin-right: 5px;
 }
+
 @media (max-width: 600px) {
-body {
-font-size: 14px;
-}
+    body {
+        font-size: 20px;
+    }
 
-header {
-padding: 10px;
-}
+    header {
+        padding: 15px;
+    }
 
-#board {
-top: 250px;
-left: 10%;
-width: 80%;
-grid-gap: 3px;
-}
+    #board {
+        top: 450px;
+        left: 10%;
+        width: 80%;
+        grid-gap: 10px;
+    }
 
-.cell {
-width: 25%;
-height: 80px;
-font-size: 30px;
-}
+    .cell {
+        width: 95%;
+        height: 80px;
+        font-size: 30px;
+    }
 
-.start {
-top: 200px;
-left: 25%;
-}
+    .start {
+        top: 350px;
+        left: 14%;
+    }
 
-.prev {
-top: 200px;
-left: 40%;
-}
+    .prev {
+        top: 350px;
+        left: 31%;
+    }
 
-.reset {
-top: 200px;
-left: 55%;
-}
+    .reset {
+        top: 350px;
+        left: 69%;
+    }
 
-.player {
-font-size: 20px;
-}
+    .player {
+        font-size: 30px;
+    }
 }

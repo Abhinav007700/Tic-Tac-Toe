@@ -105,3 +105,12 @@ footer p {
     color: #ff6d00;
 }
 
+@media (max-width: 600px) {
+    body {
+        font-size: 20px;
+    }
+
+    header {
+        padding: 15px;
+    }
+}

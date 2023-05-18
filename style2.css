@@ -124,52 +124,43 @@ font-size: 30px;
 margin-right: 5px;
 }
 @media (max-width: 600px) {
-body {
-font-size: 14px;
-}
+    body {
+        font-size: 20px;
+    }
 
-header {
-padding: 10px;
-}
+    header {
+        padding: 15px;
+    }
 
-#board {
-top: 200px;
-left: 10%;
-width: 80%;
-grid-template-columns: repeat(4, 1fr);
-grid-gap: 5px;
-}
+    #board {
+        top: 400px;
+        left: 10%;
+        width: 80%;
+        grid-gap: 10px;
+    }
 
-.cell {
-width: 23%;
-height: 80px;
-font-size: 30px;
-}
+    .cell {
+        width: 99%;
+        height: 80px;
+        font-size: 30px;
+    }
 
-.cell-text {
-font-size: 24px;
-}
+    .start {
+        top: 280px;
+        left: 14%;
+    }
 
-button {
-font-size: 16px;
-}
+    .prev {
+        top: 280px;
+        left: 31%;
+    }
 
-.start {
-top: 150px;
-left: 25%;
-}
+    .reset {
+        top: 280px;
+        left: 69%;
+    }
 
-.prev {
-top: 150px;
-left: 40%;
-}
-
-.reset {
-top: 150px;
-left: 55%;
-}
-
-.player {
-font-size: 24px;
-}
+    .player {
+        font-size: 30px;
+    }
 }
