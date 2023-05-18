@@ -1,0 +1,115 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #1f1f1f;
+    color: white;
+    font-family: "Arial", sans-serif;
+    line-height: 1.5;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #222;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6d00;
+}
+
+li::before {
+    content: "\2022";
+    color: #ff6d00;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#board {
+    position: absolute;
+    top: 350px;
+    left: 39.7%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 3px solid aqua;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+.cell-text {
+    transition: transform 0.3s ease;
+}
+.cell:hover .cell-text {
+    transform: scale(1.7);
+}
+button {
+    font-size: 20px;
+}
+.start{
+    position: absolute;
+    top: 275px;
+    left: 40%;
+}
+.prev{
+    position: absolute;
+    top: 275px;
+    left: 45%;
+}
+.reset{
+    position: absolute;
+    top: 275px;
+    left: 56%;
+}
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.player span {
+    margin-right: 5px;
+}
