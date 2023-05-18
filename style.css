@@ -113,3 +113,44 @@ button {
 .player span {
     margin-right: 5px;
 }
+@media (max-width: 600px) {
+body {
+font-size: 14px;
+}
+
+header {
+padding: 10px;
+}
+
+#board {
+top: 250px;
+left: 10%;
+width: 80%;
+grid-gap: 3px;
+}
+
+.cell {
+width: 25%;
+height: 80px;
+font-size: 30px;
+}
+
+.start {
+top: 200px;
+left: 25%;
+}
+
+.prev {
+top: 200px;
+left: 40%;
+}
+
+.reset {
+top: 200px;
+left: 55%;
+}
+
+.player {
+font-size: 20px;
+}
+}
